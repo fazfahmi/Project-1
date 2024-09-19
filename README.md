@@ -1,4 +1,4 @@
-# Optimizing Purchase Predictions: A Machine Learning Classification Model
+# Analysis of Dairy Distributor Sales in India 2019-2022
 
 ## Overview
 This project focuses on developing a machine learning model to predict purchase behaviors. By leveraging classification techniques, the aim is to enhance prediction accuracy and provide insights for marketing optimization.
