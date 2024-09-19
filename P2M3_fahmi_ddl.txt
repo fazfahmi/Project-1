@@ -1,0 +1,68 @@
+Nama	: Fahmi 
+Batch	: RMT-034
+Objective : File ini berisi URL dataset dan syntax DDL serta DML yang dipakai dalam PostgreSQL
+
+________________________________________ 
+
+URL dataset: https://www.kaggle.com/datasets/suraj520/dairy-goods-sales-dataset
+
+Syntax DDL:
+CREATE TABLE table_m3 (
+    LOCATION VARCHAR(50),
+    TOTAL_LAND_AREA DECIMAL(10, 2),
+    NUMBER_OF_COWS INT,
+    FARM_SIZE VARCHAR(20),
+    DATE DATE,
+    PRODUCT_ID INT,
+    PRODUCT_NAME VARCHAR(100),
+    BRAND VARCHAR(100),
+    QUANTITY DECIMA  L(10, 2),
+    PRICE_PER_UNIT DECIMAL(10, 2),
+    TOTAL_VALUE DECIMAL(15, 4),
+    SHELF_LIFE INT,
+    STORAGE_CONDITION VARCHAR(50),
+    PRODUCTION_DATE DATE,
+    EXPIRATION_DATE DATE,
+    QUANTITY_SOLD INT,
+    PRICE_PER_UNIT_SOLD DECIMAL(10, 2),
+    APPROX_TOTAL_REVENUE DECIMAL(15, 2),
+    CUSTOMER_LOCATION VARCHAR(100),
+    SALES_CHANNEL VARCHAR(50),
+    QUANTITY_IN_STOCK INT,
+    MINIMUM_STOCK_THRESHOLD DECIMAL(10, 2),
+    REORDER_QUANTITY DECIMAL(10, 2)
+);
+
+Syntax di atas saya gunakan saat membuat table table_m3 sebelum melakukan import file csv ke Postgres SQL.
+
+Syntax DML:
+COPY table_m3(
+    LOCATION, 
+    TOTAL_LAND_AREA, 
+    NUMBER_OF_COWS, 
+    FARM_SIZE, 
+    DATE, 
+    PRODUCT_ID, 
+    PRODUCT_NAME, 
+    BRAND, 
+    QUANTITY, 
+    PRICE_PER_UNIT, 
+    TOTAL_VALUE, 
+    SHELF_LIFE, 
+    STORAGE_CONDITION, 
+    PRODUCTION_DATE, 
+    EXPIRATION_DATE, 
+    QUANTITY_SOLD, 
+    PRICE_PER_UNIT_SOLD, 
+    APPROX_TOTAL_REVENUE, 
+    CUSTOMER_LOCATION, 
+    SALES_CHANNEL, 
+    QUANTITY_IN_STOCK, 
+    MINIMUM_STOCK_THRESHOLD, 
+    REORDER_QUANTITY
+) 
+FROM 'P2M3_fahmi_data_raw.csv' 
+DELIMITER ',' 
+CSV HEADER;
+
+Syntax di atas saya gunakan untuk import file csv ke table yang sudah dibuat di database Postgres SQL.

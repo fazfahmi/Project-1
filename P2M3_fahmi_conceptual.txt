@@ -1,0 +1,43 @@
+Nama	: Fahmi 
+Batch	: RMT-034
+Objective : File ini berisi jawaban conceptual problem. 
+
+________________________________________ 
+
+Jelaskan apa yang dimaksud dengan NoSQL menggunakan pemahaman yang kalian ketahui !
+NoSQL merupakan jenis database yang umumnya diperuntukkan untuk data-data yang tidak terstruktur, baik itu semiterstruktur maupun tidak terstruktur. 
+  
+Jelaskan kapan harus menggunakan NoSQL dan Relational Database Management System !
+NoSQL:
+Anda direkomendasikan menggunakan NoSQL jika 
+- proses development-nya cepat. Misalnya, bidangnya terus meluas dalam rentang waktu yang relatif singkat.
+- digunakan untuk menyimpan data terstruktur maupun tidak terstruktur
+- untuk menampung data yang volumenya besar
+- mengadopsi pendekatan arsitektur mikorservis
+
+RDBMS:
+Anda bisa tetap menggunakan RDMBS bila
+- jika proses development relatif tetap. Tidak ada perubahan cakupan bidang dalam kurun waktu tertentu.
+- digunakan hanya untuk menyimpan data terstruktur.
+- tidak masalah dengan vertical scaling yang jika dilakukan penambahan resources komputer perlu dimatikan dahulu.
+
+Sebutkan contoh 2 tools/platform NoSQL selain ElasticSearch beserta keunggulan tools/platform tersebut !
+- Selain ElasticSearch, tools/platform NoSQL lainnya ialah Redis yang direkomendasikan untuk menyimpan data bertipe key-value. 
+Karena karakter datanya yang cepat terdistribusi dan tidak bertahan lama, Redis sering dipakai untuk pengiriman OTP via email dan WhatsApp.
+
+- Selain itu, MongoDB yang spesialis dalam menyimpan data bertipe document. Sebagai NoSQL tools, MongoDB fleksibel karena user tidak perlu mematuhi skema yang tetap layaknya RDBMS. 
+
+Jelaskan apa yang Anda ketahui dari Airflow menggunakan pemahaman dan bahasa Anda sendiri !
+Apache Airflow adalah software yang open-source yang diperuntukkan untuk melakukan development, penjadwalan, dan monitoring proses-proses yang bersifat batch. 
+Karena software, Apache bisa digunakan dengan berbagai bahasa pemograman, salah satunya Python.
+
+Jelaskan apa yang Anda ketahui dari Great Expectations menggunakan pemahaman dan bahasa Anda sendiri !
+- Great Expectations adalah framework yang digunakan untuk melakukan validasi data dengan menerapkan sejumlah asumsi atau aturan (expecation) pada dataset sehingga dinilai layak untuk diolah lebih lanjut. 
+- Contohnya, memastikan tidak ada missing values, berada pada rentang tertentu, dan harus bertipe data tertentu.
+
+Jelaskan apa yang Anda ketahui dari Batch Processing menggunakan pemahaman dan bahasa Anda sendiri (Definisi, Contoh Kasus Penggunaan, Tools, dll) !
+- Batch Processing merupakan merupakan jenis pemrosesan data yang umumnya berskala masif karena melibatkan batch data yang besar. 
+- Biasanya memakan waktu yang relatif lama jika dibandingkan jenis pemrosesan data lainnya, yakni stream data processing.
+- Bisa digunakan dengan penjadwalan
+- Contoh penggunaaan, penggajian karyawan dan tagihan bulanan.
+- Salah satu tool yang umum digunakan pada batch processing ialah Apache Airflow.
